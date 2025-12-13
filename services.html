@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Doux - Services</title>
+    <meta name="description" content="Découvrez les services proposés par Café Doux : Wi-Fi gratuit, espace de travail, commandes à emporter et réservations.">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5ebe0;
+            color: #4b2e2e;
+        }
+
+        /* NAVIGATION */
+        nav {
+            background-color: #4b2e2e;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            opacity: 0.7;
+        }
+
+        /* HEADER */
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #d7b89c;
+            animation: fadein 1.2s ease-in-out;
+        }
+
+        header h1 {
+            font-size: 42px;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        @keyframes fadein {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* CONTENU PRINCIPAL */
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .services-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .service-box {
+            background-color: white;
+            border-radius: 10px;
+            padding: 25px 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .service-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-box h3 {
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+
+        .service-box p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #4b2e2e;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="logo">Café Doux</div>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="commentaires.html">Commentaires</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Nos Services</h1>
+        <p>Découvrez ce que nous vous proposons ✨</p>
+    </header>
+
+    <!-- CONTENU PRINCIPAL -->
+    <main>
+        <section class="services-container">
+
+            <article class="service-box">
+                <h3>Wi-Fi Gratuit</h3>
+                <p>Profitez d’une connexion Internet rapide et gratuite pendant votre visite.</p>
+            </article>
+
+            <article class="service-box">
+                <h3>Espace de Travail</h3>
+                <p>Un espace calme et confortable pour travailler ou étudier.</p>
+            </article>
+
+            <article class="service-box">
+                <h3>Commandes à emporter</h3>
+                <p>Commandez vos boissons et snacks pour les emporter facilement.</p>
+            </article>
+
+            <article class="service-box">
+                <h3>Réservations</h3>
+                <p>Réservez une table à l’avance pour vos réunions ou rencontres.</p>
+            </article>
+
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Café Doux - Tous droits réservés</p>
+    </footer>
+
+</body>
+</html>

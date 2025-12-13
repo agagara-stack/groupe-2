@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Café Doux - Menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description" content="Découvrez le menu de Café Doux : boissons chaudes, boissons froides, snacks et pâtisseries.">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5ebe0;
+            color: #4b2e2e;
+        }
+
+        /* Barre de navigation */
+        nav {
+            background-color: #4b2e2e;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* En-tête */
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #d7b89c;
+            animation: fadein 1.2s ease-in-out;
+        }
+
+        header h1 {
+            font-size: 42px;
+        }
+
+        /* Animation */
+        @keyframes fadein {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Contenu */
+        main {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .menu-section {
+            margin-bottom: 40px;
+        }
+
+        .menu-section h2 {
+            border-bottom: 2px solid #4b2e2e;
+            display: inline-block;
+            padding-bottom: 5px;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px dashed #4b2e2e;
+            transition: 0.3s;
+        }
+
+        .menu-item:hover {
+            transform: translateX(5px);
+        }
+
+        .menu-item span {
+            font-size: 18px;
+        }
+
+        /* Responsive */
+        @media (max-width: 650px) {
+            .menu-item {
+                flex-direction: column;
+                text-align: center;
+            }
+            .menu-item span {
+                margin: 5px 0;
+            }
+        }
+
+        /* Pied de page */
+        footer {
+            background-color: #4b2e2e;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Café Doux</div>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="commentaires.html">Commentaires</a></li>
+            <li><a href="contact.html">Abonnement</a></li>
+        </ul>
+    </nav>
+
+    <!-- En-tête -->
+    <header>
+        <h1>Notre Menu</h1>
+        <p>Découvrez nos boissons, snacks et spécialités</p>
+    </header>
+
+    <!-- Contenu principal -->
+    <main>
+
+        <!-- Boissons chaudes -->
+        <section class="menu-section">
+            <h2>Boissons chaudes</h2>
+
+            <div class="menu-item">
+                <span>Espresso</span>
+                <span>10 DH</span>
+            </div>
+
+            <div class="menu-item">
+                <span>Cappuccino</span>
+                <span>15 DH</span>
+            </div>
+
+            <div class="menu-item">
+                <span>Latte</span>
+                <span>18 DH</span>
+            </div>
+
+            <div class="menu-item">
+                <span>Chocolat chaud</span>
+                <span>12 DH</span>
+            </div>
+        </section>
+
+        <!-- Boissons froides -->
+        <section class="menu-section">
+            <h2>Boissons froides</h2>
+
+            <div class="menu-item">
+                <span>Milkshake vanille</span>
+                <span>20 DH</span>
+            </div>
+
+            <div class="menu-item">
+                <span>Café glacé</span>
+                <span>18 DH</span>
+            </div>
+
+            <div class="menu-item">
+                <span>Jus d’orange frais</span>
+                <span>15 DH</span>
+            </div>
+        </section>
+
+        <!-- Snacks -->
+        <section class="menu-section">
+            <h2>Snacks</h2>
+
+            <div class="menu-item">
+                <span>Croissant</span>
+                <span>5 DH</span>
+            </div>
+
+            <div class="menu-item">
+                <span>Sandwich</span>
+                <span>15 DH</span>
+            </div>
+
+            <div class="menu-item">
+                <span>Gâteau au chocolat</span>
+                <span>10 DH</span>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>© 2025 Café Doux - Tous droits réservés</p>
+    </footer>
+
+</body>
+</html>
